@@ -4,6 +4,7 @@
 
 
 def test_notebooks_compatible_with_python_2():
+    import os 
     finished = False
     for notebook in os.listdir("D:/code/da-notebooks/notebooks/_modules"):
         import notebook

@@ -10,7 +10,3 @@ notifications:
       - matiasnferrero@gmail.com
     on_success: never
     on_failure: always
-
-addons:
-  artifacts:
-    working_dir: "D:/code/da-notebooks/notebooks/_modules"    

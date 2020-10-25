@@ -2,15 +2,14 @@
 ### import home.matias.code.travistest.setup.py
 ###import tests.test_setup
 
-
+from notebooks_to_test import *
 path_notebooks = 'notebooks_to_test'
 
 def test_notebooks_compatible_with_python_2():
     import os 
     finished = False
 
-    from notebooks_to_test import *
-    
+   
     #list_notebooks = os.listdir(path_notebooks)
     #print(f'list_notebooks: {list_notebooks}')
     # for notebook in list_notebooks:

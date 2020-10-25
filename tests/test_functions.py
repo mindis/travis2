@@ -8,7 +8,7 @@ def test_my_unit_is_2():
     import my_unit
     print('import finished. Will assert...')
 
-    assert main.x == 2
+    assert my_unit.x == 2
 
 
 def test_my_unit_is_int():
@@ -17,7 +17,7 @@ def test_my_unit_is_int():
     import my_unit
     print('import finished. Will assert...')
 
-    assert isinstance(main.x, int) 
+    assert isinstance(my_unit.x, int) 
     
     
 

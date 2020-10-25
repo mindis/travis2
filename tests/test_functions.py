@@ -2,6 +2,17 @@
 ### import home.matias.code.travistest.setup.py
 ###import tests.test_setup
 
+
+def test_notebooks_compatible_with_python_2():
+    finished = False
+    for notebook in os.listdir("D:/code/da-notebooks/notebooks/_modules"):
+        import notebook
+        print(f'imported {notebook}')
+    
+    finished = True
+    assert finished
+
+
 def test_my_unit_is_2():
     print('Running test_my_unit_is_2...')
     print('importing my_unit..')

@@ -2,11 +2,16 @@
 ### import home.matias.code.travistest.setup.py
 ###import tests.test_setup
 
+import sys
+# insert at 1, 0 is the script path (or '' in REPL)
+path_notebooks = "D:/code/da-notebooks/notebooks/_modules"
+sys.path.insert(1, path_notebooks)
+
 
 def test_notebooks_compatible_with_python_2():
     import os 
     finished = False
-    for notebook in os.listdir("D:/code/da-notebooks/notebooks/_modules"):
+    for notebook in os.listdir(path_notebooks):
         import notebook
         print(f'imported {notebook}')
     

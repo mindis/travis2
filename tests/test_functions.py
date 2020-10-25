@@ -8,9 +8,16 @@ path_notebooks = 'notebooks_to_test'
 def test_notebooks_compatible_with_python_2():
     import os 
     finished = False
-    for notebook in os.listdir(path_notebooks):
-        import notebook
-        print(f'imported {notebook}')
+
+    from notebooks_to_test import *
+    
+    #list_notebooks = os.listdir(path_notebooks)
+    #print(f'list_notebooks: {list_notebooks}')
+    # for notebook in list_notebooks:
+    #     #print(notebook)
+    #     print(type(notebook))
+    #     import notebook
+    #     #print(f'imported {notebook}')
     
     finished = True
     assert finished

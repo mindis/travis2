@@ -2,10 +2,10 @@
 ### import home.matias.code.travistest.setup.py
 ###import tests.test_setup
 
-from notebooks_to_test import *
-path_notebooks = 'notebooks_to_test'
+from tests.notebooks_to_test import *
 
 def test_notebooks_compatible_with_python_2():
+
     import os 
     finished = False
 

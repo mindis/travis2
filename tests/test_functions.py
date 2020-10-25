@@ -1,11 +1,6 @@
 
-
 ### import home.matias.code.travistest.setup.py
-
-
 ###import tests.test_setup
-
-
 
 def test_setup():
 
